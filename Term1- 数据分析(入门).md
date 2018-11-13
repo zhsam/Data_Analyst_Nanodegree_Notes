@@ -1,0 +1,5 @@
+- 欢迎来到第一学期 (Welcome to Term1!)
+- Python入门 (Introduction to Python)
+- 数据分析入门 (Introduction to Data Analysis)
+- 统计学 (Practical Statistics)
+- 恭喜与下一步 (Congratulations and Next Steps)

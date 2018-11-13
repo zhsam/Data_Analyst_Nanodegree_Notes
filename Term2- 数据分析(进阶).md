@@ -1,0 +1,5 @@
+- 欢迎来到第二学期 (Welcome to Term2!)
+- 数据探索 (Exploratory Data Analysis)
+- 数据清洗 (Data Wrangling)
+- 数据可视化 (Data Story Telling)
+- 恭喜与下一步 (Congratulations and Next Steps)
