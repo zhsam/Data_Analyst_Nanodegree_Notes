@@ -16,14 +16,23 @@
 ### 欢迎来到第一学期 (Welcome to Term1!)
 
 **1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)**
-- SELECT & FROM
-- LIMIT
-- ORDER BY
-- WHERE
-- LIKE
-- IN
-- NOT
-- AND, BETWEEN
-- OR
+- SELECT & FROM：从某个表里，选取XXX。
+- LIMIT：限制返回的行数
+- ORDER BY：排序方式
+- WHERE：特定条件
+- LIKE：模糊查询
+- IN：
+`select * from user_info where user_id in (1001, 1002)`
+- NOT：不等于
+- AND, BETWEEN：
+- OR：
+
+**移动平均 Moving Average, MA**
+指的是一次计算一段区间内的平均值，而非单天的数值。
+移动平均可抚平短期波动，反映出长期趋势或周期。
+例：想看01/01~01/31数据的7日移动平均情况，
+01/07 = 01/01~01/07的数据均值
+01/08 = 01/02~01/08的数据均值
+以此类推
 
 ### Python入门 (Introduction to Python)
