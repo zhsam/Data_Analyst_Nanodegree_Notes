@@ -81,7 +81,22 @@
 01/08 = 01/02 - 01/08的数据均值 <br>
 以此类推
 
-### 2.Python入门 (Introduction to Python)
-### 3.数据分析入门 (Introduction to Data Analysis)
+## 2.Python入门 (Introduction to Python)
+## 3.数据分析入门 (Introduction to Data Analysis)
 
-### 4.实战统计学 (Practical Statistics)
+### 3-7 SQL基础 (Basic SQL)
+
+### 3-8 SQL Joins
+
+### 3-9 SQL Aggregations
+
+### 3-10 SQL Subqueries & Temporary Tables
+
+### 3-11 SQL Data Cleaning
+
+### 3-12 [Advanced] SQL Window Functions
+
+### 3-13 [Advanced] SQL Advanced JOINs & Performance Tunning
+
+
+## 4.实战统计学 (Practical Statistics)
