@@ -84,15 +84,62 @@
 ## 2.Python入门 (Introduction to Python)
 ## 3.数据分析入门 (Introduction to Data Analysis)
 
-### 3-7 SQL基础 (Basic SQL)
-
 ### 3-8 SQL Joins
+- JOIN 顾名思义为将表进行连接
+`SELECT o.*, a.*
+FROM demo.orders o
+JOIN demo.accounts a
+ON orders.account_id = accounts.id`
+
+- JOIN的分类
+  - **LEFT JOIN**
+  - RIGHT JOIN
+  - OUTER JOIN
+  - FULL OUTER JOIN
 
 ### 3-9 SQL Aggregations
+- count( ): 计数  不考虑 null
+- sum ( ): 求和
+- min( ): 最小值
+- max( ): 最大值
+- avg( ): 均值
+
+- NULL: 空值，无法使用 '=', 只能用 IS NULL ／ IS NOT NULL
+
+- GROUP BY — 有统计函数，需要有 Group by
+
+- DISTINCT
+
+- HAVING — 类似 WHERE
+
+- DATE
+
+- CASE — if then statements in SQL
+`CASE WHEN  platform_id = 1 OR(AND) platform_id = 0 THEN 0 ELSE  1  END as is_facebook`
+
+`SELECT a.name, SUM(total_amt_usd) total_spent,
+     CASE WHEN SUM(total_amt_usd) > 200000 THEN 'top'
+     WHEN  SUM(total_amt_usd) > 100000 THEN 'middle'
+     ELSE 'low' END AS customer_level
+FROM orders o
+JOIN accounts a
+ON o.account_id = a.id
+WHERE occurred_at > '2015-12-31'
+GROUP BY 1
+ORDER BY 2 DESC;`
 
 ### 3-10 SQL Subqueries & Temporary Tables
+- WITH
+
 
 ### 3-11 SQL Data Cleaning
+- LEFT
+- RIGHT
+- POSITION
+- STRPOS
+- CONCAT
+- CAST
+- COALESCE
 
 ### 3-12 [Advanced] SQL Window Functions
 
