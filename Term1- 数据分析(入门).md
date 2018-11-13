@@ -15,7 +15,7 @@
 
 ### 欢迎来到第一学期 (Welcome to Term1!)
 
-*1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)*
+**1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)**
 - SELECT & FROM
 - LIMIT
 - ORDER BY
