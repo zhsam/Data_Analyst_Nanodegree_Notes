@@ -1,15 +1,23 @@
 # 优达学城 - 数据分析师(入门) ｜ Udacity- Data Analyst Term1
 
 ## 课程目录
-- 欢迎来到第一学期 (Welcome to Term1!)
+- 1. 欢迎来到第一学期 (Welcome to Term1!)
   - 欢迎来到纳米学位 (Welcome to Nanodegree Program)
   - 数据分析师的一天 (The Life of a Data Analyst)
   - 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)
   - [项目]探索气候趋势 [Project] Explore Weather Trends
-- Python入门 (Introduction to Python)
-- 数据分析入门 (Introduction to Data Analysis)
-- 统计学 (Practical Statistics)
-- 恭喜与下一步 (Congratulations and Next Steps)
+- 2. Python入门 (Introduction to Python)
+  - 为什么要Python？ (Why Python Programming)
+  - 数据类型与运算符 (Data Types and Opertors)
+  - 控制流 (Control Flow)
+  - 函数 (Functions)
+  - 脚本撰写 (Scripting)
+  - Numpy
+  - Pandas
+  - [项目]美国共享单车数据分析 [Project] Explore US Bikeshare Data
+- 3. 数据分析入门 (Introduction to Data Analysis)
+- 4. 统计学 (Practical Statistics)
+- 5. 恭喜与下一步 (Congratulations and Next Steps)
 
 <hr></hr>
 
