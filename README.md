@@ -1,4 +1,4 @@
-# Udacity 数据分析师纳米学位知识点整理
+# 优达学城(Udacity) - 数据分析师纳米学位(入门+进阶)知识点整理
 github地址：https://github.com/zhsam/Data_Analyst_Nanodegree_Notes
 这个Repo存放了我在Udacity(优达学城数据分析纳米学位的一些学习心得、后续的面试经验)
 
