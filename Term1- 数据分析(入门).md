@@ -1,6 +1,6 @@
-#优达学城 - 数据分析师(入门) ｜ Udacity- Data Analyst Term1
+# 优达学城 - 数据分析师(入门) ｜ Udacity- Data Analyst Term1
 
-##课程目录
+## 课程目录
 - 欢迎来到第一学期 (Welcome to Term1!)
   - 欢迎来到纳米学位 (Welcome to Nanodegree Program)
   - 数据分析师的一天 (The Life of a Data Analyst)
@@ -13,4 +13,4 @@
 
 <h></h>
 
-##欢迎来到第一学期 (Welcome to Term1!)
+## 欢迎来到第一学期 (Welcome to Term1!)
