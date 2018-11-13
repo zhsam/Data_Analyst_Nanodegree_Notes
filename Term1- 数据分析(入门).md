@@ -25,7 +25,9 @@
 `select * from user_info where user_id in (1001, 1002)`
 - NOT：不等于
 - AND, BETWEEN：
-- OR：
+  - AND： 同时符合一些条件
+  - BETWEEN： 在两个条件之间
+- OR：只要某个条件成立就成立
 
 **移动平均 Moving Average, MA**
 指的是一次计算一段区间内的平均值，而非单天的数值。
