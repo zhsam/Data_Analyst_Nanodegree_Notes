@@ -21,4 +21,4 @@ github地址：https://github.com/zhsam/Data_Analyst_Nanodegree_Notes
 - [Udacity Data Analyst Nanodegree](https://github.com/zhsam/Udacity-Data-Analyst-nd)
 
 **面试经验**
-- 快手-数据分析师
+- [快手-数据分析师](https://github.com/zhsam/Data_Analyst_Nanodegree_Notes/blob/master/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C-%E5%BF%AB%E6%89%8B-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88.md)
