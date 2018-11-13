@@ -31,23 +31,23 @@
   - [Advanced] SQL Advanced JOINs & Performance Tunning
   - [Project] Investigate a Dataset
 - 4.统计学 (Practical Statistics)
-  - Descriptive Statistics - Part1
-  - Descriptive Statistics - Part2
-  - Admissions Case Study
-  - Probability
-  - Binomial Distribution
-  - Conditional Probability
-  - Bayes Rule
-  - Python Probability Practice
-  - Normal Distribution Theory
-  - Sampling distributions and the Central Limit Theorem
-  - Confidence Intervals
-  - Hypothesis Testing
-  - Case Study: A/B tests
-  - Regression
-  - Multiple Linear Regression
-  - Logistic Regression
-  - [Project] Analyze A/B Test Results
+  - 描述统计-1 (Descriptive Statistics - Part1)
+  - 描述统计-2 (Descriptive Statistics - Part2)
+  - 录取问题-案例分析 (Admissions Case Study)
+  - 概率 (Probability)
+  - 白努力定理 (Binomial Distribution)
+  - 条件概率 (Conditional Probability)
+  - 贝叶斯定理 (Bayes Rule)
+  - Python概率练习 (Python Probability Practice)
+  - 正态分布定理 (Normal Distribution Theory)
+  - 抽样与中央极限定理 (Sampling distributions and the Central Limit Theorem)
+  - 信赖区间 (Confidence Intervals)
+  - 假设检定 (Hypothesis Testing)
+  - 案例分析: AB测试 (Case Study: A/B tests)
+  - 回归 (Regression)
+  - 多元线性回归 (Multiple Linear Regression)
+  - 逻辑回归 (Logistic Regression)
+  - [项目]分析AB测试结果 ([Project] Analyze A/B Test Results)
 - 5.恭喜与下一步 (Congratulations and Next Steps)
 
 <hr></hr>
