@@ -1,6 +1,6 @@
 # 优达学城 - 数据分析师(入门) ｜ Udacity- Data Analyst Term1
 
-## 课程目录
+### 课程目录
 - 欢迎来到第一学期 (Welcome to Term1!)
   - 欢迎来到纳米学位 (Welcome to Nanodegree Program)
   - 数据分析师的一天 (The Life of a Data Analyst)
@@ -11,6 +11,19 @@
 - 统计学 (Practical Statistics)
 - 恭喜与下一步 (Congratulations and Next Steps)
 
-<h></h>
+<hr></hr>
 
-## 欢迎来到第一学期 (Welcome to Term1!)
+### 欢迎来到第一学期 (Welcome to Term1!)
+
+*1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)*
+- SELECT & FROM
+- LIMIT
+- ORDER BY
+- WHERE
+- LIKE
+- IN
+- NOT
+- AND, BETWEEN
+- OR
+
+### Python入门 (Introduction to Python)
