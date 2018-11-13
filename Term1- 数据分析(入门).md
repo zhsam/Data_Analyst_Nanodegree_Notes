@@ -30,7 +30,7 @@
   - [Advanced] SQL Window Functions
   - [Advanced] SQL Advanced JOINs & Performance Tunning
   - [Project] Investigate a Dataset
-- 4.统计学 (Practical Statistics)
+- 4.实战统计学 (Practical Statistics)
   - 描述统计-1 (Descriptive Statistics - Part1)
   - 描述统计-2 (Descriptive Statistics - Part2)
   - 录取问题-案例分析 (Admissions Case Study)
@@ -52,7 +52,7 @@
 
 <hr></hr>
 
-## 欢迎来到第一学期 (Welcome to Term1!)
+## 1.欢迎来到第一学期 (Welcome to Term1!)
 
 ### 1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)
 **SQL 基本介绍**
@@ -77,4 +77,6 @@
 01/08 = 01/02 - 01/08的数据均值 <br>
 以此类推
 
-### Python入门 (Introduction to Python)
+### 2.Python入门 (Introduction to Python)
+### 3.数据分析入门 (Introduction to Data Analysis)
+### 4.实战统计学 (Practical Statistics)
