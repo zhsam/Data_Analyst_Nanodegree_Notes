@@ -12,11 +12,26 @@
   - 控制流 (Control Flow)
   - 函数 (Functions)
   - 脚本撰写 (Scripting)
-  - Numpy
-  - Pandas
+  - Numpy (Python包)
+  - Pandas (Python包)
   - [项目]美国共享单车数据分析 [Project] Explore US Bikeshare Data
 - 3.数据分析入门 (Introduction to Data Analysis)
+  - Anaconda
+  - Jupyter Notebooks
+  - 数据分析流程 (The Data Anlysis Process)
+  - 数据分析流程-案例1 (Data Analysis Process - Case Study 1)
+  - 数据分析流程-案例2 (Data Analysis Process - Case Study 2)
+  - 数据分析工作流 (Programming Workflow for Data Analysis)
+  - SQL基础 (Basic SQL)
+  - SQL Joins
+  - SQL Aggregations
+  - SQL Subqueries & Temporary Tables
+  - SQL Data Cleaning
+  - [Advanced] SQL Window Functions
+  - [Advanced] SQL Advanced JOINs & Performance Tunning
+  - [Project] Investigate a Dataset
 - 4.统计学 (Practical Statistics)
+  - 
 - 5.恭喜与下一步 (Congratulations and Next Steps)
 
 <hr></hr>
