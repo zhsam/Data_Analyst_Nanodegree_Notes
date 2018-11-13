@@ -1,6 +1,6 @@
 # 优达学城 - 数据分析师(入门) ｜ Udacity- Data Analyst Term1
 
-### 课程目录
+## 课程目录
 - 欢迎来到第一学期 (Welcome to Term1!)
   - 欢迎来到纳米学位 (Welcome to Nanodegree Program)
   - 数据分析师的一天 (The Life of a Data Analyst)
@@ -13,9 +13,9 @@
 
 <hr></hr>
 
-### 欢迎来到第一学期 (Welcome to Term1!)
+## 欢迎来到第一学期 (Welcome to Term1!)
 
-#### 1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)
+### 1-3 项目准备：SQL与 移动平均(Project Prep. SQL and Moving Average)
 **SQL 基本介绍**
 - SELECT & FROM：从某个表里，选取XXX。
 - LIMIT：限制返回的行数
