@@ -140,7 +140,7 @@ ORDER BY 2 DESC;
 先运行内层查询，在运行外层查询。
 子查询可以放在 FROM之后、或者WHERE之中。
 
-  - 范例1
+  - 范例1 - 最常见的子查询
 ```
 SELECT *
 FROM (SELECT DATE_TRUNC('day',occurred_at) AS day,
@@ -149,12 +149,56 @@ FROM (SELECT DATE_TRUNC('day',occurred_at) AS day,
      GROUP BY 1,2
      ORDER BY 3 DESC) sub;
 ```
-  - 范例2
+  - 范例2 - 子查询在 WHERE
 ```
 SELECT AVG(standard_qty) avg_std, AVG(gloss_qty) avg_gls, AVG(poster_qty) avg_pst
 FROM orders
 WHERE DATE_TRUNC('month', occurred_at) =
      (SELECT DATE_TRUNC('month', MIN(occurred_at)) FROM orders);
+```
+  - 范例3 - 多层子查询
+```
+SELECT t3.id, t3.name, t3.channel, t3.ct
+FROM (SELECT a.id, a.name, we.channel,  COUNT(*) ct
+      FROM accounts a
+      JOIN web_events we
+      ON a.id = we.account_id
+      GROUP BY a.id, a.name, we.channel) t3
+JOIN (SELECT t1.id, t1.name, MAX(ct) max_chan
+      FROM (SELECT a.id, a.name, we.channel,  COUNT(*) ct
+            FROM accounts a
+            JOIN web_events we
+            ON a.id = we.account_id
+            GROUP BY a.id, a.name, we.channel) t1
+      GROUP BY t1.id, t1.name) t2
+ON t2.id = t3.id AND t2.max_chan = t3.ct
+ORDER BY t3.id, t3.ct;
+```
+  - 范例4 - 多重JOIN
+```
+SELECT t3.rep_name, t3.region_name, t3.total_amt
+FROM(SELECT region_name, MAX(total_amt) total_amt
+     FROM(SELECT s.name rep_name, r.name region_name, SUM(o.total_amt_usd) total_amt
+             FROM sales_reps s
+             JOIN accounts a
+             ON a.sales_rep_id = s.id
+             JOIN orders o
+             ON o.account_id = a.id
+             JOIN region r
+             ON r.id = s.region_id
+             GROUP BY 1, 2) t1
+     GROUP BY 1) t2
+JOIN (SELECT s.name rep_name, r.name region_name, SUM(o.total_amt_usd) total_amt
+     FROM sales_reps s
+     JOIN accounts a
+     ON a.sales_rep_id = s.id
+     JOIN orders o
+     ON o.account_id = a.id
+     JOIN region r
+     ON r.id = s.region_id
+     GROUP BY 1,2
+     ORDER BY 3 DESC) t3
+ON t3.region_name = t2.region_name AND t3.total_amt = t2.total_amt;
 ```
 - WITH
 
