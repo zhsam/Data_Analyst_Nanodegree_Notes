@@ -277,8 +277,62 @@ ON a.id = o.account_id;
 ```
 
 ### 3-12 [Advanced] SQL Window Functions
+**Window Function 1**
+
+**Window Function 2**
+
+**ROW_NUMBER**
+
+**Rank**
+
+**Aggregations in Window Function**
+
+**Alias for Multiple Window Function**
+
+ **Comparing a Row to Previous Row**
+
+**Percentiles**
 
 ### 3-13 [Advanced] SQL Advanced JOINs & Performance Tunning
+**FULL OUTER JOIN**
 
+**Self JOINs**
+
+**UNION**
+
+**Performance Tuning**
 
 ## 4.实战统计学 (Practical Statistics)
+### 4-1 描述统计-1 (Descriptive Statistics - Part1)
+
+### 4-2 描述统计-2 (Descriptive Statistics - Part2)
+
+### 4-3 录取问题-案例分析 (Admissions Case Study)
+
+### 4-4 概率 (Probability)
+
+### 4-5 白努力定理 (Binomial Distribution)
+
+### 4-6 条件概率 (Conditional Probability)
+
+### 4-7 贝叶斯定理 (Bayes Rule)
+
+### 4-8 Python概率练习 (Python Probability Practice)
+
+### 4-9 正态分布定理 (Normal Distribution Theory)
+
+### 4-10 抽样与中央极限定理 (Sampling distributions and the Central Limit Theorem)
+
+### 4-11 信赖区间 (Confidence Intervals)
+
+### 4-12 假设检定 (Hypothesis Testing)
+
+### 4-13 案例分析: AB测试 (Case Study: A/B tests)
+
+### 4-14 回归 (Regression)
+
+### 4-15 多元线性回归 (Multiple Linear Regression)
+
+### 4-16 逻辑回归 (Logistic Regression)
+
+### [项目]分析AB测试结果 ([Project] Analyze A/B Test Results)
