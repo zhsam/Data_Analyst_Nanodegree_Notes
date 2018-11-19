@@ -234,13 +234,47 @@ FROM t2;
 ```
 
 ### 3-11 SQL Data Cleaning
-- LEFT
-- RIGHT
-- POSITION
-- STRPOS
-- CONCAT
-- CAST
-- COALESCE
+**截取数据**
+- LEFT: 截取左边数来第几位
+`LEFT(phone_number, 3)`
+- RIGHT: 截取右边数来第几位
+`RIGHT(phone_number, 8)`
+- POSITION：回传该特定字符，从左侧起出现的位置
+- STRPOS：字符串的位置函数
+```
+SELECT LEFT(name, STRPOS(name, ' ') -1 ) first_name,
+       RIGHT(name, LENGTH(name) - STRPOS(name, ' ')) last_name
+FROM sales_reps;
+```
+- LOWER：全部变成小写
+- UPPER：全部变成大写
+
+**串接数据**
+- CONCAT：将字符串在一块
+`CONCAT(first_name, ' ', last_name)`
+- ||
+`first_name || ' ' || last_name`
+
+**进阶时间函数**
+- CAST：把数据变成某种格式
+两种cast的方法：
+  - (1) AS
+  ```
+  SELECT (SUBSTR(date, 7, 4) || '-' || LEFT(date, 2) || '-' || SUBSTR(date, 4, 2) AS DATE) new_date
+  FROM sf_crime_data;
+  ```
+  - (2) ::
+```
+SELECT (SUBSTR(date, 7, 4) || '-' || LEFT(date, 2) || '-' || SUBSTR(date, 4, 2))::DATE new_date
+FROM sf_crime_data;
+```
+- COALESCE：处理空值
+```
+SELECT COALESCE(a.id, a.id) filled_id, a.name, a.website, a.lat, a.long, a.primary_poc, a.sales_rep_id, COALESCE(o.account_id, a.id) account_id, o.occurred_at, COALESCE(o.standard_qty, 0) standard_qty, COALESCE(o.gloss_qty,0) gloss_qty, COALESCE(o.poster_qty,0) poster_qty, COALESCE(o.total,0) total, COALESCE(o.standard_amt_usd,0) standard_amt_usd, COALESCE(o.gloss_amt_usd,0) gloss_amt_usd, COALESCE(o.poster_amt_usd,0) poster_amt_usd, COALESCE(o.total_amt_usd,0) total_amt_usd
+FROM accounts a
+LEFT JOIN orders o
+ON a.id = o.account_id;
+```
 
 ### 3-12 [Advanced] SQL Window Functions
 
