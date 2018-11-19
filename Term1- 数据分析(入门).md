@@ -117,10 +117,11 @@ ON orders.account_id = accounts.id
 - DATE
 
 - CASE — if then statements in SQL
+  - 范例1
 ```
 CASE WHEN  platform_id = 1 OR(AND) platform_id = 0 THEN 0 ELSE  1  END as is_facebook
 ```
-
+  - 范例2
 ```
 SELECT a.name, SUM(total_amt_usd) total_spent,
      CASE WHEN SUM(total_amt_usd) > 200000 THEN 'top'
