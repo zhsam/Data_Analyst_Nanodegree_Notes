@@ -86,10 +86,12 @@
 
 ### 3-8 SQL Joins
 - JOIN 顾名思义为将表进行连接
-`SELECT o.*, a.*
+```
+SELECT o.*, a.*
 FROM demo.orders o
 JOIN demo.accounts a
-ON orders.account_id = accounts.id`
+ON orders.account_id = accounts.id
+```
 
 - JOIN的分类
   - **LEFT JOIN**
@@ -115,9 +117,12 @@ ON orders.account_id = accounts.id`
 - DATE
 
 - CASE — if then statements in SQL
-`CASE WHEN  platform_id = 1 OR(AND) platform_id = 0 THEN 0 ELSE  1  END as is_facebook`
+```
+CASE WHEN  platform_id = 1 OR(AND) platform_id = 0 THEN 0 ELSE  1  END as is_facebook
+```
 
-`SELECT a.name, SUM(total_amt_usd) total_spent,
+```
+SELECT a.name, SUM(total_amt_usd) total_spent,
      CASE WHEN SUM(total_amt_usd) > 200000 THEN 'top'
      WHEN  SUM(total_amt_usd) > 100000 THEN 'middle'
      ELSE 'low' END AS customer_level
@@ -126,9 +131,21 @@ JOIN accounts a
 ON o.account_id = a.id
 WHERE occurred_at > '2015-12-31'
 GROUP BY 1
-ORDER BY 2 DESC;`
+ORDER BY 2 DESC;
+```
 
 ### 3-10 SQL Subqueries & Temporary Tables
+- Subqueries
+先运行内层查询，在运行外层查询。
+```
+SELECT *
+FROM (SELECT DATE_TRUNC('day',occurred_at) AS day,
+           channel, COUNT(*) as events
+     FROM web_events
+     GROUP BY 1,2
+     ORDER BY 3 DESC) sub;
+```
+
 - WITH
 
 
