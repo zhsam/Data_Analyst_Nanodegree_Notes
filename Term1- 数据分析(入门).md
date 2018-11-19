@@ -201,7 +201,37 @@ JOIN (SELECT s.name rep_name, r.name region_name, SUM(o.total_amt_usd) total_amt
 ON t3.region_name = t2.region_name AND t3.total_amt = t2.total_amt;
 ```
 - WITH
+WITH 又被称之为公用表表达式 (Common Table Expression, CTE)
 
+  - 范例1 - 简单WITH
+```
+WITH events AS (SELECT DATE_TRUNC('day', occurred_at) AS day,
+                channel,
+                COUNT(*) AS event_count
+                FROM demo.web_events_full
+                ORDER BY 1, 2)
+
+SELECT channel,
+       AVG(event_count) AS avg_event_count
+FROM events
+ORDER BY 1
+ORDER BY 2 DESC
+```
+  - 范例2 - 多项 WITH
+```
+WITH t1 AS (
+   SELECT AVG(o.total_amt_usd) avg_all
+   FROM orders o
+   JOIN accounts a
+   ON a.id = o.account_id),
+t2 AS (
+   SELECT o.account_id, AVG(o.total_amt_usd) avg_amt
+   FROM orders o
+   GROUP BY 1
+   HAVING AVG(o.total_amt_usd) > (SELECT * FROM t1))
+SELECT AVG(avg_amt)
+FROM t2;
+```
 
 ### 3-11 SQL Data Cleaning
 - LEFT
