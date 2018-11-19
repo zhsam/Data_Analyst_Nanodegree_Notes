@@ -137,6 +137,9 @@ ORDER BY 2 DESC;
 ### 3-10 SQL Subqueries & Temporary Tables
 - Subqueries
 先运行内层查询，在运行外层查询。
+子查询可以放在 FROM之后、或者WHERE之中。
+
+  - 范例1
 ```
 SELECT *
 FROM (SELECT DATE_TRUNC('day',occurred_at) AS day,
@@ -145,7 +148,13 @@ FROM (SELECT DATE_TRUNC('day',occurred_at) AS day,
      GROUP BY 1,2
      ORDER BY 3 DESC) sub;
 ```
-
+  - 范例2
+```
+SELECT AVG(standard_qty) avg_std, AVG(gloss_qty) avg_gls, AVG(poster_qty) avg_pst
+FROM orders
+WHERE DATE_TRUNC('month', occurred_at) =
+     (SELECT DATE_TRUNC('month', MIN(occurred_at)) FROM orders);
+```
 - WITH
 
 
