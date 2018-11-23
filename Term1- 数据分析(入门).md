@@ -278,7 +278,14 @@ ON a.id = o.account_id;
 
 ### 3-12 [Advanced] SQL Window Functions
 **Window Function 1**
-
+- Running total
+- Partitioned By
+```
+select standard_qty,
+       DATE_TRUNC('month', occurred_at) AS month,
+       SUM(standard_qty) OVER (PARTITIONED BY DATE_TRUNC('month', occurred_at)) AS running_total
+from demo.orders
+```
 **Window Function 2**
 
 **ROW_NUMBER**
